@@ -1,0 +1,619 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    </head>
+    <body>
+        <header class="main-header">
+            <i class="fa fa-times"></i>
+              <div class="bars">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+              </div>
+  <div class="group1">
+              <div class="logo">
+                  <img src="images (4).png" alt="">
+              </div>
+  
+                  <nav>
+                  
+                      <ul>
+                          <li class="home">Home</li>
+                          <li class="top-imdb">Top Imdb</li>
+                          <li class="ratings">Ratings</li>
+                          <li class="acct">Account</li>
+                          <li class="trending">Trending</li>
+                          <li class="blog">Blog</li>
+                      </ul>
+               
+                      <div class="btns">
+                          <button class="login">Login</button>
+                          <button class="sign-up">Sign Up</button>
+                      </div>
+                  </nav>
+              </div>
+              <div class="group2">
+                  <form class="search-form">
+                      <input type="search" placeholder="Search Movies/Series Here">
+                    </form>
+              <i class="fa fa-search" aria-hidden="true"></i>
+  
+  
+  <i class="fa fa-user" aria-hidden="true"></i>
+  </div>
+          </header>
+
+
+          <div class="see-all-page" style="display: none;">
+            <div class="group1">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <header>
+                <div class="line">
+    
+                </div>
+                <p>Movies</p>
+                <div class="line"></div>
+            </header>
+    
+            <div class="main-featured">
+                <i class="fa fa-angle-left"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+      <div class="swiper-wrapper">
+       
+       </div>
+    </div>
+    
+    
+    <div class="sub-featured">
+        <header>
+            <p>Featured</p>
+            <div class="paginators">
+                <i class="fa fa-step-backward" aria-hidden="true"></i>
+                <i class="fa fa-step-forward" aria-hidden="true"></i>
+            </div>
+        </header>
+        <div class="contain">
+      
+       
+        </div>
+    </div>
+    
+        <div class="recently-added">
+                <header>
+                    <p>Recently added </p>
+                   <div class="total">200</div>
+                </header>
+                <div class="contain">
+              
+    
+                </div>
+            </div>
+        
+    
+    <button class="next"><i class='fa fa-angle-right'></i></button>
+    </div>
+    
+    <div class="group2">
+    
+    <form class="">
+    <input type="text" id="see-all-input" placeholder="Search Here...">
+    
+    </form>
+    
+            <div class="related">
+    
+                <header>
+                    <p>Related </p>
+           
+                </header>
+                <div class="contain">
+              
+                </div>
+               
+            </div>
+    
+    
+    </div>
+    
+        </div> 
+    
+        <div class="see-all-page-tv" style="display: none;">
+            <div class="group1">
+                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <header>
+
+                <div class="line">
+
+                </div>
+                <p class="ts">Tv Shows</p>
+                <div class="line"></div>
+            </header>
+
+            <div class="main-featured">
+                <i class="fa fa-angle-left"></i>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+      <div class="swiper-wrapper">
+       
+     
+       </div>
+    </div>
+    
+
+    <div class="sub-featured">
+        <header>
+            <p>Featured</p>
+            <div class="paginators">
+                <i class="fa fa-step-backward" aria-hidden="true"></i>
+                <i class="fa fa-step-forward" aria-hidden="true"></i>
+            </div>
+        </header>
+        <div class="contain">
+      
+           
+        </div>
+    </div>
+
+        <div class="recently-added">
+                <header>
+                    <p>Recently added </p>
+                   <div class="total"></div>
+                </header>
+                <div class="contain">
+              
+        
+                </div>
+            </div>
+        
+
+<button class="next"><i class='fa fa-angle-right'></i></button>
+</div>
+
+<div class="group2">
+
+<form class="">
+  <input type="text" id="see-all-input" placeholder="Search Here...">
+  
+</form>
+
+            <div class="related">
+
+                <header>
+                    <p>Related </p>
+           
+                </header>
+                <div class="contain">
+    
+                </div>
+            </div>
+   
+
+</div>
+
+        </div>  
+
+<div class="see-all-top-movies">
+          <div class="top-movies">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            <header>
+                <p>TOP IMDb</p>
+                <div class="no"></div>
+            </header>
+            <div class="txt">MOVIES</div>
+<div class="swiper-wrapper">
+
+
+          
+            </div>
+        </div>
+</div>
+
+
+<div class="see-all-top-tv">
+    <div class="top-series">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      <header>
+          <p>TOP IMDb</p>
+          <div class="no"></div>
+      </header>
+      <div class="txt">TOP TV SHOWS</div>
+<div class="swiper-wrapper">
+
+      
+      
+      </div>
+  </div>
+</div>
+
+
+
+        <div class="movie-page">
+            <div class="group1">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <header>
+                <div class="trailer-box">
+                <i class="fa fa-play" aria-hidden="true"></i>
+                <div>Watch Trailer</div>
+                </div>
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+            </header>
+    <hr>
+            <div class="d-box">
+                <div class="image">
+                    <img src="" alt="">
+    
+                </div>
+                <div class="text">
+                    <div class="movie-name"></div>
+                    <div class="syno-summ"></div>
+                    <div class="d-c">
+                        <div class="date"></div>
+                        <div class="country"></div>
+                    </div>
+                   <div class="r-t">
+                    <div class="runtime"></div>
+                    
+                   </div>
+                   <div class="genre">
+               
+                   </div>
+                </div>
+            </div>
+    
+            <div class="info-box">
+                <div class="info">Info</div>
+                <div class="Cast">Cast</div>
+            </div>
+    
+            <div class="synopsis">
+                <div class="a">Synopsis</div>
+                <div class="overview" id="synopsi">
+    
+                </div>
+            </div>
+    <div class="hr"></div>
+            <div class="backdrop">
+                <img src="" alt="">
+                
+            </div>
+            <div class="hr"></div>
+    
+            <div class="movie-info">
+                <div class="name-text">
+                    <p>Movie name</p>
+                    <div class="movie-title"></div>
+                </div>
+                <div class="hr"></div>
+                <div class="imdb">
+                    <p></p>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <div class="rating-no"></div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="tmdb">
+                    <p></p>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <div class="rating-no"></div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+            </div>
+        </div>
+        <div class="group2">
+            <div class="experience-mr">
+                <header class="v">
+                        Experience more action
+                </header>
+    
+                <div class="contain" id="experi-contain">
+    
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    <div class="container">
+        
+
+        <main class="main-main">
+                         
+            <div class="main-featured">
+                        <i class="fa fa-angle-left"></i>
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+              <div class="swiper-wrapper">
+               
+               <!-- <div class="image">
+                    <div class='img' style = "background-image:url('Blue & White Futuristic Gaming Youtube Thumbnail.png')" alt="">
+                    <div class="item">
+                        <div class="movie-name">seter</div>
+                        <div class="year">2021</div>
+                    </div>
+                <div class="tag">Movie</div>
+                </div> -->
+               
+            </div>
+            </div>
+
+            <div class="sub-featured">
+                <header>
+                    <p>Featured</p>
+                    <div class="paginators">
+                        <i class="fa fa-step-backward" aria-hidden="true"></i>
+                        <i class="fa fa-step-forward" aria-hidden="true"></i>
+                    </div>
+                </header>
+                <div class="contain">
+              
+                  <!--  <div class="image">
+                        <div class="tag">Featured</div>
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+        <div class="item">
+                            <div class="movie-name">Jurassic</div>
+                        <div class="year">2022</div>
+                    </div>
+                        </div> 
+                </div>-->
+            </div>
+</div>
+            <div class="featuredd" id="second-featured">
+                              <header>
+
+                    <p>Upcoming/Theatres</p>
+
+                    <div class="paginators">
+                        <i class="fa fa-step-backward" aria-hidden="true"></i>
+                        <i class="fa fa-step-forward" aria-hidden="true"></i>
+                    </div>
+                </header>
+
+              <div class="swiper-wrapper">
+<!--
+                <div class="image">
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                    <div class="item">
+                        <div class="movie-name">After</div>
+                        <div class="year">2021</div>
+                    </div>
+                <div class="tag">Movie</div>
+                </div>
+            </div>-->
+            </div>
+
+</div>
+
+            <div class="movie-slide">
+                <header>
+                    <p>Movies</p>
+                    <div class="see-all">
+                    <p class="total-no">270</p>
+                    <p class="text" id="movie-see-all">see all</p>
+                    </div>
+                </header>
+
+                <div class="contain">
+
+             <!--   <div class="image">
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+    <div class="item">
+                        <div class="movie-name">Jurassic</div>
+                    <div class="year">2022</div>
+                </div>
+                    </div> -->
+                    </div>
+            </div>
+
+
+
+
+
+
+            <div class="tv-featured-slide">
+              <div class="swiper-wrapper">
+                <!-- <div class="image">
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                    <div class="item">
+                        <div class="movie-name">After</div>
+                        <div class="year">2021</div>
+                    </div>
+                <div class="tag">Movie</div>
+                </div>
+
+                <div class="image">
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                    <div class="item">
+                        <div class="movie-name">After</div>
+                        <div class="year">2021</div>
+                    </div>
+                <div class="tag">Movie</div>
+                </div>
+
+                <div class="image">
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                    <div class="item">
+                        <div class="movie-name">After</div>
+                        <div class="year">2021</div>
+                    </div>
+                <div class="tag">Movie</div>
+                </div> -->
+            </div>
+            
+</div>
+            <div class="tv-shows">
+                <header>
+                    <p>TV Shows</p>
+                    <div class="see-all">
+                    <p class="total-no">20</p>
+                    <p class="text" id="tv-see-all">see all</p>
+                    </div>
+                </header>
+
+                <div class="contain">
+<!-- 
+                <div class="image">
+            
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+    <div class="item">
+                        <div class="movie-name">Jurassic</div>
+                    <div class="year">2022</div>
+                </div>
+                </div>
+                <div class="image">
+                
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+    <div class="item">
+                        <div class="movie-name">Jurassic</div>
+                    <div class="year">2022</div>
+                </div>
+                </div>
+                <div class="image">
+                    <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+    <div class="item">
+                        <div class="movie-name">Jurassic</div>
+                    <div class="year">2022</div>
+                </div>
+                </div>
+                 -->
+                </div>
+                </div>
+
+            <div class="top-movies">
+                <header>
+                    <p>TOP MOVIES</p>
+                    <div class="see-all">see all</div>
+                </header>
+<div class="swiper-wrapper" id="top-ms">
+ <!-- <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">1</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                After
+                    </div>
+</div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">2</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                After
+                    </div>
+</div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">3</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                After
+                    </div>
+</div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">4</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                After
+                    </div>
+                    </div>
+</div>
+                </div>
+            </div>
+-->
+</div>
+
+
+
+            <div class="top-series">
+
+                <header>
+
+                    <p>TOP TVSHOWS</p>
+                    <div class="see-all">see all</div>
+                </header>
+<div class="swiper-wrapper" id="top-sss">
+<!-- <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">1</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                Af
+                    </div>
+</div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">2</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                After
+                    </div>
+</div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">3</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                After
+                    </div>
+</div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="Blue & White Futuristic Gaming Youtube Thumbnail.png" alt="">
+                        <div class="num">4</div>
+                    </div>
+<div class="top-rating-box">
+                    <div class="rating">4.4</div>
+                    <div class="movie-name">
+                After
+                    </div>
+                    </div>
+</div>
+                </div>
+            </div>
+-->
+        </main>
+    </div>
+    <script src="script.js"></script>
+    </body>
+    </html>
